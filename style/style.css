@@ -66,6 +66,7 @@ legend {
   list-style: none;
   font-family: "Pretendard", sans-serif;
   border: 0;
+  text-decoration: none;
 }
 
 fieldset {
@@ -523,6 +524,8 @@ body::-webkit-scrollbar-track {
   display: inline-block;
   padding: 33px 0;
   position: relative;
+  text-decoration: none;
+  color: #fff;
   transition: all 0.3s;
 }
 
@@ -605,6 +608,8 @@ body::-webkit-scrollbar-track {
   display: inline-block;
   position: relative;
   padding: 0 10px;
+  text-decoration: none;
+  color: #171717;
 }
 
 /* .header .header_wrap .head_gnb .topmenu .lnb > li a:after {content: ""; display: inline-block; position: absolute; width: 0; border-bottom: 1px  solid #1a4691; bottom:-5px; left: 0; right: 0; transition: width .3s}
@@ -642,7 +647,8 @@ body::-webkit-scrollbar-track {
   margin-right: 45px;
 }
 
-#header:hover .header_wrap .head_nav .global {
+#header:hover .header_wrap .head_nav .global li,
+#header:hover .header_wrap .head_nav .global i {
   color: #171717;
 }
 
@@ -657,6 +663,8 @@ body::-webkit-scrollbar-track {
   display: inline-block;
   padding: 26px 0;
   display: inline-block;
+  text-decoration: none;
+  color: #fff;
 }
 
 #header .header_wrap .head_nav .global i {
@@ -664,6 +672,8 @@ body::-webkit-scrollbar-track {
   font-weight: 500;
   transition: transform 0.3s;
   display: inline-block;
+  text-decoration: none;
+  color: #fff;
 }
 
 #header.header_wrap .head_nav .global a:hover i {
@@ -687,6 +697,8 @@ body::-webkit-scrollbar-track {
 #header .header_wrap .head_nav .global .country li a {
   display: inline-block;
   position: relative;
+  text-decoration: none;
+  color: #171717;
 }
 
 /* .header .header_wrap .head_nav .global .country li a:after {content: ""; display: inline-block; position: absolute; width: 0; border-bottom: 1px  solid #1a4691; bottom:-5px; left: 0; right: 0; transition: width .3s}
@@ -711,7 +723,7 @@ body::-webkit-scrollbar-track {
 
 /* 사이트맵메뉴 */
 #sitemap {
-  position: absolute;
+  position: fixed;
   z-index: 800;
   width: 100%;
   height: 100%;
@@ -802,25 +814,33 @@ body::-webkit-scrollbar-track {
   align-items: center;
   gap: 15px;
 }
+#sitemap .sitemap .sitemap-middle .global_nav .head_gnb .global a {
+  text-decoration: none;
+  color: #999;
+}
 
 #sitemap .sitemap .sitemap-middle .global_nav .head_gnb .global > a > i {
   font-size: 45px;
+  color: #999;
 }
 
 #sitemap .sitemap .sitemap-middle .global_nav .head_gnb .global .country {
   display: flex;
   gap: 15px;
   color: #999;
+  text-decoration: none;
 }
 
 #sitemap .sitemap .sitemap-middle .global_nav .head_gnb .global .country li a {
   transition: color 0.3s;
   position: relative;
+  text-decoration: none;
 }
 
 #sitemap .sitemap .sitemap-middle .global_nav .head_gnb .global .country li a.active,
 #sitemap .sitemap .sitemap-middle .global_nav .head_gnb .global .country li a:hover {
   color: #171717;
+  text-decoration: none;
 }
 
 #sitemap .sitemap .sitemap-middle .global_nav .head_gnb .global .country li a::before {
@@ -834,12 +854,14 @@ body::-webkit-scrollbar-track {
   transform-origin: bottom right;
   transform: scaleX(0);
   transition: transform 0.5s ease;
+  text-decoration: none;
 }
 
 #sitemap .sitemap .sitemap-middle .global_nav .head_gnb .global .country li a.active::before,
 #sitemap .sitemap .sitemap-middle .global_nav .head_gnb .global .country li a:hover::before {
   transform: scaleX(1);
   transform-origin: bottom left;
+  text-decoration: none;
 }
 
 #sitemap .sitemap .sitemap-middle #map-nav {
@@ -858,6 +880,9 @@ body::-webkit-scrollbar-track {
 #sitemap .sitemap .sitemap-middle #map-nav #map-gnb .map_menu {
   padding-left: 50px;
 }
+#sitemap .sitemap .sitemap-middle #map-nav #map-gnb .map_menu a {
+  text-decoration: none;
+}
 
 #sitemap .sitemap .sitemap-middle #map-nav #map-gnb .map_menu .map_wrap {
   display: inline-block;
@@ -870,10 +895,12 @@ body::-webkit-scrollbar-track {
   display: inline-block;
   color: #aeb1b4;
   padding: 25px 0;
+  text-decoration: none;
 }
 
 #sitemap .sitemap .sitemap-middle #map-nav #map-gnb .map_menu:first-child a {
   padding-top: 0;
+  text-decoration: none;
 }
 
 #sitemap .sitemap .sitemap-middle #map-nav #map-gnb .map_menu.active .map_wrap > a {
@@ -1348,6 +1375,7 @@ header:hover .m-gnb .m-nav .burger-menu {
   position: relative;
   width: -moz-fit-content;
   width: fit-content;
+  text-decoration: none;
 }
 
 #snb .lnb li a:hover {
@@ -1374,13 +1402,49 @@ header:hover .m-gnb .m-nav .burger-menu {
 
 /* sub 서브페이지 */
 #sub {
-  padding: 100px 0;
+  padding: 50px 0;
+  background: #eee;
+}
+
+.sub-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+}
+.sub-flex .swiper {
+  width: 800px;
+  height: 500px;
+}
+.sub-flex .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sub-flex .swiper-slide img {
+  display: block;
+  background: #eee;
+  width: 80%;
+  margin: auto;
+}
+.sub-flex .swiper-slide img::-moz-selection {
+  background: none;
+}
+.sub-flex .swiper-slide img::selection {
+  background: none;
 }
 
 #sub .subtitle_wrap {
   letter-spacing: -1px;
   font-weight: 700;
-  padding-bottom: 100px;
+}
+#sub .subtitle_wrap h4 {
+  font-size: 22px;
+  color: #7a7a7a;
+  padding-top: 10px;
 }
 
 #sub .subtitle_wrap .eng_title {
@@ -1402,6 +1466,7 @@ header:hover .m-gnb .m-nav .burger-menu {
   color: #666;
   font-size: 20px;
   font-weight: 200;
+  max-width: 600px;
 }
 
 #sub_wrap .sub-section {
@@ -1447,103 +1512,6 @@ header:hover .m-gnb .m-nav .burger-menu {
   font-size: 45px;
   font-weight: 700;
   position: relative;
-}
-
-/* sub01_01 회사소개 */
-.sub01_01 .section01 {
-  display: flex;
-  align-items: center;
-  gap: 5%;
-}
-
-.sub01_01 .section01 .sub-content-img {
-  flex-basis: 40%;
-}
-
-.sub01_01 .section01 .sub-content-txt {
-  flex-basis: 50%;
-}
-
-.sub01_01 .section01 .sub-content-txt h4 {
-  font-size: 35px;
-  letter-spacing: -1px;
-  padding-bottom: 30px;
-  line-height: 1.3;
-}
-
-.sub01_01 .section01 .sub-content-txt h4 span {
-  font-weight: 700;
-}
-
-.sub01_01 .section01 .sub-content-txt .sub-content-intro {
-  font-size: 18px;
-  color: #5a5a5a;
-  font-weight: 400;
-  line-height: 1.5;
-}
-
-.sub01_01 .section01 .sub-content-txt .sub-content-intro .txt_right {
-  text-align: right;
-}
-
-.sub01_01 .section01 .sub-content-txt .sub-content-intro .txt_right .sub_corp {
-  font-size: 20px;
-  font-weight: 700;
-  color: #aaa;
-}
-
-.sub01_01 .section01 .sub-content-txt .sub-content-intro .ceo {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  justify-content: right;
-}
-
-.sub01_01 .section01 .sub-content-txt .sub-content-intro .txt_right .sub_ceo {
-  font-size: 25px;
-  font-weight: 800;
-  color: #171717;
-}
-
-.sub01_01 .section02 ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1vw 1%;
-}
-
-.sub01_01 .section02 ul li {
-  flex-basis: 24%;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 20px;
-  position: relative;
-}
-
-.sub01_01 .section02 ul li p {
-  display: flex;
-  flex-direction: column;
-}
-
-.sub01_01 .section02 ul li .overview_tit {
-  font-size: 25px;
-  font-weight: 600;
-}
-
-.sub01_01 .section02 ul li .overview_txt {
-  font-size: 16px;
-  font-weight: 400;
-  color: #666;
-  padding: 10px 0 100px;
-}
-
-.sub01_01 .section02 ul li p:last-child {
-  position: absolute;
-  font-size: 35px;
-  font-weight: 200;
-  color: #666;
-  bottom: 20px;
-  right: 20px;
-  color: #144d98;
 }
 
 /*footer 푸터*/
@@ -1611,6 +1579,11 @@ header:hover .m-gnb .m-nav .burger-menu {
   height: fit-content;
   font-size: 18px;
   font-weight: 500;
+}
+
+#footer a {
+  text-decoration: none;
+  color: #fff;
 }
 
 #footer .footer .footer_wrap .footer_link .footer_link_list > li > a {
@@ -1847,16 +1820,114 @@ header:hover .m-gnb .m-nav .burger-menu {
   background-color: #efefef;
 }
 
-.main-section-menu {
-  padding-top: 300px;
-  margin-left: 200px;
+/* sub01_01 회사소개 */
+.sub01_01 {
+  width: 90%;
+  padding-bottom: 100px;
+  margin: auto;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
 }
-.main-section-menu h3 {
-  font-size: 30px;
-  color: #fff;
-  text-transform: uppercase;
+.sub01_01-filter {
+  width: 20%;
 }
-.main-section-menu h1 {
-  font-size: 50px;
-  color: #fff;
+.sub01_01-filter-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.sub01_01-filter-top h3 {
+  font-size: 16px;
+}
+.sub01_01-filter-top .line {
+  width: 70%;
+  height: 1px;
+  background: #171717;
+}
+.sub01_01-filter-types .accordion {
+  outline: none;
+  border: none;
+}
+.sub01_01-filter-types .accordion .accordion-item {
+  outline: none;
+  border: none;
+}
+.sub01_01-filter-types .accordion .accordion-item .accordion-header {
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
+}
+.sub01_01-filter-types .accordion .accordion-item .accordion-header button {
+  padding: 10px 5px;
+  margin: 10px 0;
+  font-size: 22px;
+  background: none;
+  color: #000 !important;
+  border: none;
+  outline: none;
+  font-weight: bold;
+}
+.sub01_01-filter-types .accordion .accordion-item .accordion-header button:focus {
+  outline: none;
+}
+.sub01_01-filter-types .accordion .accordion-item .accordion-header .collapsed {
+  color: #999 !important;
+}
+.sub01_01-filter-types .accordion .accordion-body {
+  padding: 0 10px;
+  margin: 0;
+}
+.sub01_01-filter-types .accordion .accordion-body input {
+  width: 15px;
+  height: 15px;
+  border-radius: 0;
+}
+.sub01_01-products {
+  width: 75%;
+}
+.sub01_01-products-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.sub01_01-products-top p {
+  font-size: 20px;
+  color: #666;
+}
+.sub01_01-products-top i {
+  font-size: 20px;
+  color: #666;
+}
+.sub01_01-products-items {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.sub01_01-products-items .item .img {
+  width: 290px;
+  height: 330px;
+  overflow: hidden;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #deeeee;
+  border-radius: 20px;
+}
+.sub01_01-products-items .item .img img {
+  width: auto;
+  height: auto;
+}
+.sub01_01-products-items .item p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #171717;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

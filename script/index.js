@@ -51,52 +51,6 @@ $(function () {
             $(".ft_global_list").slideUp();
         });
     });
-    var swiper = new Swiper("#main_06 .main_cert_patent .main_cert_bond .swiper-container", {
-        loop: true,
-        loopAdditionalSlides: 1,
-        slidesPerView: 1,
-
-
-        navigation: {
-            nextEl: ".swiper-button-next3",
-            prevEl: ".swiper-button-prev3",
-        },
-        breakpoints: {
-            640: {
-                slidesPerView: 2,
-            },
-            768: {
-                slidesPerView: 4,
-            },
-            1024: {
-                slidesPerView: 5,
-            },
-        },
-    });
-
-    var swiper = new Swiper("#main_06 .main_cert .main_cert_wrap .main_cert_certification .main_cert_bond .swiper-container", {
-        loop: true,
-        loopAdditionalSlides: 1,
-        slidesPerView: 1,
-
-
-        navigation: {
-            nextEl: ".swiper-button-next4",
-            prevEl: ".swiper-button-prev4",
-        },
-        breakpoints: {
-            640: {
-                slidesPerView: 2,
-            },
-            768: {
-                slidesPerView: 4,
-            },
-            1024: {
-                slidesPerView: 5,
-            },
-        },
-    });
-
 });
 document.addEventListener("DOMContentLoaded", function () {
     var snbItems = document.querySelectorAll("#snb > li");
