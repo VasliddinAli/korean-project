@@ -1246,16 +1246,6 @@ header:hover .m-gnb .m-nav .burger-menu {
   font-weight: 500;
 }
 
-#s_top .s_top_h2_wrap::after {
-  content: "";
-  display: inline-block;
-  border-left: 2px solid #fff;
-  height: 30px;
-  top: 0;
-  left: 0;
-  position: absolute;
-}
-
 @keyframes sub-line {
   from {
     top: 0;
@@ -1403,6 +1393,7 @@ header:hover .m-gnb .m-nav .burger-menu {
 /* sub 서브페이지 */
 #sub {
   padding: 50px 0;
+  margin: auto;
   background: #eee;
 }
 
@@ -1427,7 +1418,7 @@ header:hover .m-gnb .m-nav .burger-menu {
 .sub-flex .swiper-slide img {
   display: block;
   background: #eee;
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 .sub-flex .swiper-slide img::-moz-selection {
@@ -1836,7 +1827,7 @@ header:hover .m-gnb .m-nav .burger-menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 20px;
+  padding: 20px 0;
 }
 .sub01_01-filter-top h3 {
   font-size: 16px;
@@ -1892,7 +1883,7 @@ header:hover .m-gnb .m-nav .burger-menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 .sub01_01-products-top p {
   font-size: 20px;
@@ -1930,4 +1921,151 @@ header:hover .m-gnb .m-nav .burger-menu {
   font-weight: bold;
   color: #171717;
   text-align: center;
+}
+
+@media (max-width: 1560px) {
+  .sub-flex .swiper {
+    width: 600px;
+    height: 400px;
+  }
+}
+@media (max-width: 1460px) {
+  #s_top {
+    position: relative;
+    padding-top: 240px;
+    padding-left: 100px;
+  }
+}
+@media (max-width: 1380px) {
+  .sub-flex .swiper {
+    width: 600px;
+    height: 400px;
+  }
+  #sub .subtitle_wrap h4 {
+    font-size: 22px;
+    padding-top: 10px;
+  }
+  #sub .subtitle_wrap .eng_title {
+    font-size: 28px;
+  }
+  #sub .subtitle_wrap .sub_title h3 {
+    font-size: 45px;
+  }
+  #sub .subtitle_wrap .sub_title .sub_description {
+    font-size: 20px;
+  }
+  #sub_wrap .sub-section {
+    padding-bottom: 50px;
+  }
+  /* sub01_01 회사소개 */
+  .sub01_01 {
+    width: 90%;
+    padding-bottom: 100px;
+    margin: auto;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+  }
+  .sub01_01-filter {
+    width: 20%;
+  }
+  .sub01_01-filter-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+  .sub01_01-filter-top h3 {
+    font-size: 16px;
+  }
+  .sub01_01-filter-top .line {
+    width: 70%;
+    height: 1px;
+    background: #171717;
+  }
+  .sub01_01-filter-types .accordion {
+    outline: none;
+    border: none;
+  }
+  .sub01_01-filter-types .accordion .accordion-item {
+    outline: none;
+    border: none;
+  }
+  .sub01_01-filter-types .accordion .accordion-item .accordion-header {
+    padding: 0;
+    margin: 0;
+    background: none;
+    border: none;
+  }
+  .sub01_01-filter-types .accordion .accordion-item .accordion-header button {
+    padding: 10px 5px;
+    margin: 10px 0;
+    font-size: 22px;
+    background: none;
+    color: #000 !important;
+    border: none;
+    outline: none;
+    font-weight: bold;
+  }
+  .sub01_01-filter-types .accordion .accordion-item .accordion-header button:focus {
+    outline: none;
+  }
+  .sub01_01-filter-types .accordion .accordion-item .accordion-header .collapsed {
+    color: #999 !important;
+  }
+  .sub01_01-filter-types .accordion .accordion-body {
+    padding: 0 10px;
+    margin: 0;
+  }
+  .sub01_01-filter-types .accordion .accordion-body input {
+    width: 15px;
+    height: 15px;
+    border-radius: 0;
+  }
+  .sub01_01-products {
+    width: 75%;
+  }
+  .sub01_01-products-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  .sub01_01-products-top p {
+    font-size: 20px;
+    color: #666;
+  }
+  .sub01_01-products-top i {
+    font-size: 20px;
+    color: #666;
+  }
+  .sub01_01-products-items {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  .sub01_01-products-items .item .img {
+    width: 350px;
+    height: 300px;
+    overflow: hidden;
+    padding: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #deeeee;
+    border-radius: 20px;
+  }
+  .sub01_01-products-items .item .img img {
+    width: auto;
+    height: auto;
+  }
+  .sub01_01-products-items .item p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #171717;
+    text-align: center;
+  }
 }/*# sourceMappingURL=style.css.map */

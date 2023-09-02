@@ -1268,15 +1268,15 @@ header:hover .m-gnb .m-nav .burger-menu {
     font-weight: 500;
 }
 
-#s_top .s_top_h2_wrap::after {
-    content: "";
-    display: inline-block;
-    border-left: 2px solid #fff;
-    height: 30px;
-    top: 0;
-    left: 0;
-    position: absolute;
-}
+// #s_top .s_top_h2_wrap::after {
+//     content: "";
+//     display: inline-block;
+//     border-left: 2px solid #fff;
+//     height: 30px;
+//     top: 0;
+//     left: 0;
+//     position: absolute;
+// }
 
 @keyframes sub-line {
     from {
@@ -1427,6 +1427,7 @@ header:hover .m-gnb .m-nav .burger-menu {
 /* sub 서브페이지 */
 #sub {
     padding: 50px 0;
+    margin: auto;
     background: #eee;
 }
 
@@ -1453,7 +1454,7 @@ header:hover .m-gnb .m-nav .burger-menu {
     & .swiper-slide img {
         display: block;
         background: #eee;
-        width: 80%;
+        width: 90%;
         margin: auto;
 
         &::selection {
@@ -1867,7 +1868,7 @@ header:hover .m-gnb .m-nav .burger-menu {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding-bottom: 20px;
+            padding: 20px 0;
 
             & h3 {
                 font-size: 16px;
@@ -1937,7 +1938,7 @@ header:hover .m-gnb .m-nav .burger-menu {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin-bottom: 20px;
+            margin: 20px 0;
 
             & p {
                 font-size: 20px;
@@ -1981,6 +1982,273 @@ header:hover .m-gnb .m-nav .burger-menu {
                     font-weight: bold;
                     color: #171717;
                     text-align: center;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ========================================================================================================================================================================================================================================================================================================================================
+
+@media(max-width: 1560px) {
+    .sub-flex {
+        & .swiper {
+            width: 600px;
+            height: 400px;
+        }
+    }
+}
+
+@media(max-width: 1460px) {
+    #s_top {
+        position: relative;
+        padding-top: 240px;
+        padding-left: 100px;
+    }
+}
+@media(max-width: 1380px) {
+    .sub-flex {
+        & .swiper {
+            width: 600px;
+            height: 400px;
+        }
+    }
+
+    #sub .subtitle_wrap {
+        & h4 {
+            font-size: 22px;
+            padding-top: 10px;
+        }
+    }
+
+    #sub .subtitle_wrap .eng_title {
+        font-size: 28px;
+    }
+
+
+    #sub .subtitle_wrap .sub_title h3 {
+        font-size: 45px;
+    }
+
+    #sub .subtitle_wrap .sub_title .sub_description {
+        font-size: 20px;
+    }
+
+    #sub_wrap .sub-section {
+        padding-bottom: 50px;
+    }
+
+    /* sub01_01 회사소개 */
+    .sub01_01 {
+        width: 90%;
+        padding-bottom: 100px;
+        margin: auto;
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+
+        &-filter {
+            width: 20%;
+
+            &-top {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 20px 0;
+
+                & h3 {
+                    font-size: 16px;
+                }
+
+                & .line {
+                    width: 70%;
+                    height: 1px;
+                    background: #171717;
+                }
+            }
+
+            &-types {
+                & .accordion {
+                    outline: none;
+                    border: none;
+
+                    & .accordion-item {
+                        outline: none;
+                        border: none;
+
+                        & .accordion-header {
+                            padding: 0;
+                            margin: 0;
+                            background: none;
+                            border: none;
+
+                            & button {
+                                padding: 10px 5px;
+                                margin: 10px 0;
+                                font-size: 22px;
+                                background: none;
+                                color: #000 !important;
+                                border: none;
+                                outline: none;
+                                font-weight: bold;
+
+                                &:focus {
+                                    outline: none;
+                                }
+                            }
+
+                            & .collapsed {
+                                color: #999 !important;
+                            }
+                        }
+                    }
+
+                    & .accordion-body {
+                        padding: 0 10px;
+                        margin: 0;
+
+                        & input {
+                            width: 15px;
+                            height: 15px;
+                            border-radius: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        &-products {
+            width: 75%;
+
+            &-top {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 20px 0;
+
+                & p {
+                    font-size: 20px;
+                    color: #666;
+                }
+
+                & i {
+                    font-size: 20px;
+                    color: #666;
+                }
+            }
+
+            &-items {
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                gap: 30px;
+                flex-wrap: wrap;
+
+                & .item {
+                    & .img {
+                        width: 350px;
+                        height: 300px;
+                        overflow: hidden;
+                        padding: 80px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        background: #deeeee;
+                        border-radius: 20px;
+
+                        & img {
+                            width: auto;
+                            height: auto;
+                        }
+                    }
+
+                    & p {
+                        font-size: 18px;
+                        font-weight: bold;
+                        color: #171717;
+                        text-align: center;
+                    }
                 }
             }
         }
