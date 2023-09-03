@@ -1328,7 +1328,7 @@ header:hover .m-gnb .m-nav .burger-menu {
     font-weight: 500;
     font-size: 16px;
     color: #5a5a5a;
-    padding: 20px 30px 15px;
+    padding: 20px 30px 10px;
     cursor: pointer;
     position: relative;
     justify-content: space-between;
@@ -1350,6 +1350,11 @@ header:hover .m-gnb .m-nav .burger-menu {
     right: 0;
     top: 50%;
     transform: translate(0, -50%);
+}
+
+#snb li a {
+    color: #5a5a5a;
+    text-decoration: none;
 }
 
 #snb>li i {
@@ -1391,9 +1396,9 @@ header:hover .m-gnb .m-nav .burger-menu {
     font-weight: 500;
     font-size: 16px;
     color: #999;
+    text-decoration: none;
     position: relative;
     width: fit-content;
-    text-decoration: none;
 }
 
 #snb .lnb li a:hover {
@@ -1443,6 +1448,7 @@ header:hover .m-gnb .m-nav .burger-menu {
         display: flex;
         align-items: center;
         justify-content: center;
+        cursor: grab;
     }
 
     & .swiper-slide img {
@@ -1484,6 +1490,7 @@ header:hover .m-gnb .m-nav .burger-menu {
         display: flex;
         align-items: center;
         justify-content: center;
+        cursor: grab;
     }
 
     & .swiper-slide img {
@@ -2053,7 +2060,10 @@ header:hover .m-gnb .m-nav .burger-menu {
     }
 
     &-basic {
-        padding: 50px 0;
+        margin: 50px 0;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        overflow: hidden;
 
         &-top {
             background-image: url(../img/specification_bg.jpg);
@@ -2087,8 +2097,8 @@ header:hover .m-gnb .m-nav .burger-menu {
             flex-direction: column;
 
             & .bg_blue {
-                border-top: 1px solid #45b5ff;
-                border-bottom: 1px solid #45b5ff;
+                border-top: 1px solid #8cd1ff;
+                border-bottom: 1px solid #8cd1ff;
                 background: #f5f5f5;
             }
 
@@ -2720,6 +2730,7 @@ header:hover .m-gnb .m-nav .burger-menu {
             display: flex;
             align-items: center;
             justify-content: center;
+            cursor: grab;
         }
 
         & .swiper-slide img {
@@ -2948,8 +2959,8 @@ header:hover .m-gnb .m-nav .burger-menu {
                 flex-direction: column;
 
                 & .bg_blue {
-                    border-top: 1px solid #45b5ff;
-                    border-bottom: 1px solid #45b5ff;
+                    border-top: 1px solid #8cd1ff;
+                    border-bottom: 1px solid #8cd1ff;
                     background: #f5f5f5;
                 }
 
