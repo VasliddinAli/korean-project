@@ -2001,6 +2001,8 @@ header:hover .m-gnb .m-nav .burger-menu {
             flex-wrap: wrap;
 
             & .item {
+                text-decoration: none;
+
                 & .img {
                     width: 290px;
                     height: 330px;

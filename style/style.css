@@ -1942,6 +1942,9 @@ header:hover .m-gnb .m-nav .burger-menu {
   gap: 30px;
   flex-wrap: wrap;
 }
+.sub01_01-products-items .item {
+  text-decoration: none;
+}
 .sub01_01-products-items .item .img {
   width: 290px;
   height: 330px;
