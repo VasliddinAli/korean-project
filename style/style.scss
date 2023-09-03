@@ -2607,13 +2607,12 @@ header:hover .m-gnb .m-nav .burger-menu {
     }
 
     #sitemap .sitemap .sitemap-right .site_map_txt {
-        display: none;
         font-size: 20px;
         color: #fff;
         font-family: 'poppins';
         font-weight: 500;
         transform: rotateZ(90deg);
-        display: flex;
+        display: none;
         justify-content: center;
         height: calc(100% - 90px);
         align-items: center;
