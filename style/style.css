@@ -1425,6 +1425,43 @@ header:hover .m-gnb .m-nav .burger-menu {
   background: none;
 }
 
+.view_360 {
+  width: 100%;
+}
+.view_360 .img_360 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+.view_360 .img_360 img {
+  max-width: 300px;
+}
+.view_360 .swiper {
+  width: 60%;
+  height: auto;
+  padding: 0;
+}
+.view_360 .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.view_360 .swiper-slide img {
+  display: block;
+  background: #fff;
+  width: 90%;
+  margin: auto;
+}
+.view_360 .swiper-slide img::-moz-selection {
+  background: none;
+}
+.view_360 .swiper-slide img::selection {
+  background: none;
+}
+
 #sub .subtitle_wrap {
   letter-spacing: -1px;
   font-weight: 700;
@@ -1969,6 +2006,9 @@ header:hover .m-gnb .m-nav .burger-menu {
   }
 }
 @media (max-width: 1200px) {
+  .view_360 .swiper {
+    width: 80%;
+  }
   #header .header_wrap .head_menu,
   #header .header_wrap .head_nav {
     display: none;
@@ -2661,6 +2701,10 @@ header:hover .m-gnb .m-nav .burger-menu {
   }
 }
 @media (max-width: 500px) {
+  .view_360 .swiper {
+    width: 100%;
+    padding-bottom: 20px;
+  }
   #header .header_wrap .head_logo {
     padding: 20px 0;
     height: 90px;
