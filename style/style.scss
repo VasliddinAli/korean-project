@@ -3040,6 +3040,9 @@ header:hover .m-gnb .m-nav .burger-menu {
         & .swiper {
             width: 100%;
             padding-bottom: 20px;
+            & img{
+                width: 100%;
+            }
         }
     }
     #header .header_wrap .head_logo {
