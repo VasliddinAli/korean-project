@@ -50,6 +50,7 @@ $(function () {
         });
     });
 });
+
 document.addEventListener("DOMContentLoaded", function () {
     var snbItems = document.querySelectorAll("#snb > li");
 

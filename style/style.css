@@ -2068,7 +2068,6 @@ header:hover .m-gnb .m-nav .burger-menu {
   #sub .subtitle_wrap .sub_title .sub_description {
     font-size: 20px;
   }
-  /* sub01_01 회사소개 */
   .sub01_01 {
     width: 90%;
     padding-bottom: 70px;
@@ -2171,89 +2170,32 @@ header:hover .m-gnb .m-nav .burger-menu {
   }
   #sitemap .sitemap .sitemap-middle {
     width: 100%;
-    background-color: #f0f3f6;
-    position: relative;
     padding: 0;
   }
   #sitemap .sitemap .sitemap-middle::before {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background-image: url(../img/site_back_logo.png);
     width: 100%;
     height: 277px;
-    background-repeat: no-repeat;
-    background-position: bottom right;
   }
   #sitemap .sitemap .sitemap-middle .global_nav {
     height: 90px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
   }
   #sitemap .sitemap .sitemap-middle .global_nav .head_gnb .global {
-    display: flex;
     font-size: 16px;
-    font-weight: 700;
-    align-items: center;
     gap: 1px;
-  }
-  #sitemap .sitemap .sitemap-middle .global_nav .head_gnb .global a {
-    text-decoration: none;
-    color: #999;
   }
   #sitemap .sitemap .sitemap-middle .global_nav .head_gnb .global > a > i {
     font-size: 30px;
-    color: #999;
   }
   #sitemap .sitemap .sitemap-middle .global_nav .head_gnb .global .country {
-    display: flex;
     gap: 10px;
-    color: #999;
-    text-decoration: none;
   }
   #sitemap .sitemap .sitemap-middle .global_nav .head_gnb .global .country li a {
-    transition: color 0.3s;
-    position: relative;
-    text-decoration: none;
     width: 100%;
-  }
-  #sitemap .sitemap .sitemap-middle .global_nav .head_gnb .global .country li a.active,
-  #sitemap .sitemap .sitemap-middle .global_nav .head_gnb .global .country li a:hover {
-    color: #171717;
-    text-decoration: none;
-  }
-  #sitemap .sitemap .sitemap-middle .global_nav .head_gnb .global .country li a::before {
-    content: "";
-    position: absolute;
-    height: 2px;
-    bottom: -2px;
-    background-color: #171717;
-    left: 0;
-    right: 0;
-    transform-origin: bottom right;
-    transform: scaleX(0);
-    transition: transform 0.5s ease;
-    text-decoration: none;
-  }
-  #sitemap .sitemap .sitemap-middle .global_nav .head_gnb .global .country li a.active::before,
-  #sitemap .sitemap .sitemap-middle .global_nav .head_gnb .global .country li a:hover::before {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-    text-decoration: none;
   }
   #sitemap .sitemap .sitemap-middle #map-nav {
     height: calc(100% - 90px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
   #sitemap .sitemap .sitemap-middle #map-nav #map-gnb {
-    display: flex;
-    flex-direction: column;
-    position: relative;
     padding-left: 0px;
   }
   #sitemap .sitemap .sitemap-middle #map-nav #map-gnb .map_menu {
@@ -2262,17 +2204,9 @@ header:hover .m-gnb .m-nav .burger-menu {
   #sitemap .sitemap .sitemap-middle #map-nav #map-gnb .map_menu a {
     text-decoration: none;
   }
-  #sitemap .sitemap .sitemap-middle #map-nav #map-gnb .map_menu .map_wrap {
-    display: inline-block;
-  }
   #sitemap .sitemap .sitemap-middle #map-nav #map-gnb .map_menu .map_wrap > a {
     font-size: 15px;
-    font-weight: 700;
-    position: relative;
-    display: inline-block;
-    color: #aeb1b4;
     padding: 10px 0;
-    text-decoration: none;
   }
   #sitemap .sitemap .sitemap-middle #map-nav #map-gnb .map_menu:first-child a {
     padding-top: 0;
@@ -2283,90 +2217,34 @@ header:hover .m-gnb .m-nav .burger-menu {
     color: #171717;
   }
   #sitemap .sitemap .sitemap-middle #map-nav #map-gnb .map_menu .map_wrap > a::before {
-    content: "";
-    position: absolute;
     height: 3px;
     bottom: 10px;
-    background-color: #171717;
-    left: 0;
-    right: 0;
-    transform-origin: bottom right;
-    transform: scaleX(0);
-    transition: transform 0.5s ease;
-  }
-  #sitemap .sitemap .sitemap-middle #map-nav #map-gnb .map_menu.active .map_wrap > a::before,
-  #sitemap .sitemap .sitemap-middle #map-nav #map-gnb .map_menu:hover .map_wrap > a::before {
-    transform: scaleX(1);
-    transform-origin: bottom left;
   }
   #sitemap .sitemap .sitemap-middle #map-nav #map-gnb .map_menu .lnb_two {
     font-size: 16px;
-    position: absolute;
     right: 10px;
     top: 0;
     height: 100%;
   }
-  #sitemap .sitemap .sitemap-middle #map-nav #map-gnb .map_menu .lnb_two li {
-    display: none;
-  }
   #sitemap .sitemap .sitemap-middle #map-nav #map-gnb .map_menu .lnb_two li a {
-    color: #5a5a5a;
     padding: 5px 5px;
     padding-right: 0;
-    transition: all 0.3s;
   }
   #sitemap .sitemap .sitemap-middle #map-nav #map-gnb .map_menu .lnb_two {
-    color: #5a5a5a;
     padding: 0px 0px;
-    display: inline-block;
-    transition: all 0.3s;
-    z-index: 999;
-  }
-  #sitemap .sitemap .sitemap-middle #map-nav #map-gnb .map_menu .lnb_two li:first-child a {
-    padding-top: 0;
-  }
-  #sitemap .sitemap .sitemap-middle #map-nav #map-gnb .map_menu .lnb_two li:last-child a {
-    padding-bottom: 0;
-  }
-  #sitemap .sitemap .sitemap-middle #map-nav #map-gnb .map_menu .lnb_two li:hover a {
-    color: #171717;
-    font-weight: 700;
-  }
-  #sitemap .sitemap .sitemap-middle #map-nav #map-gnb .map_menu.active .lnb_two {
-    display: inline-block;
   }
   #sitemap .sitemap .sitemap-right {
     height: 100%;
     width: 50px;
-    padding-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #171717;
+    padding-top: 15px;
   }
   #sitemap .sitemap .sitemap-right .site_close {
     font-size: 30px;
     width: 50px;
     height: 50px;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
   }
   #sitemap .sitemap .sitemap-right .site_map_txt {
-    font-size: 20px;
-    color: #fff;
-    font-family: "poppins";
-    font-weight: 500;
-    transform: rotateZ(90deg);
     display: none;
-    justify-content: center;
-    height: calc(100% - 90px);
-    align-items: center;
-  }
-  .fp-viewing-section-page1 header .header_wrap {
-    color: #fff;
   }
   .sub-flex {
     display: flex;
@@ -2765,6 +2643,97 @@ header:hover .m-gnb .m-nav .burger-menu {
   }
 }
 @media (max-width: 500px) {
+  #header .header_wrap .head_logo {
+    padding: 20px 0;
+    height: 90px;
+    flex-basis: 10%;
+    min-width: 100px;
+  }
+  #header .header_wrap .head_logo h1 {
+    transition: display 0.3s;
+  }
+  #header .header_wrap .head_logo .logo_w {
+    display: none;
+  }
+  .m-gnb {
+    height: 100%;
+    width: 90px;
+  }
+  .m-gnb .m-nav {
+    width: 100%;
+    height: 70px;
+    display: table;
+    position: relative;
+    text-align: center;
+  }
+  .m-gnb .m-nav .burger-menu {
+    display: table-cell;
+    vertical-align: middle;
+    background-color: transparent;
+    transition: background-color 0.4s;
+  }
+  .m-gnb .m-nav .burger-menu .burger {
+    width: 25px;
+    height: 20px;
+    vertical-align: middle;
+    right: 0;
+    display: inline-block;
+    z-index: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: relative;
+  }
+  .m-gnb .m-nav .burger-menu .burger .burger-line {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    transition: all 0.3s;
+  }
+  .m-gnb .m-nav .burger-menu .burger .burger-line:nth-of-type(1) {
+    top: 0;
+    left: 0;
+    transform-origin: left center;
+  }
+  .m-gnb .m-nav .burger-menu .burger .burger-line:nth-of-type(2) {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 70%;
+  }
+  .m-gnb .m-nav .burger-menu .burger .burger-line:nth-of-type(3) {
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    transform-origin: left center;
+  }
+  .m-gnb .m-nav .burger-menu:hover .burger .burger-line:nth-of-type(2) {
+    width: 100%;
+  }
+  .burger_back {
+    background-color: #171717;
+    height: 70px;
+    width: 80px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all ease 0.7s;
+    z-index: -2;
+  }
+  .fp-viewing-section-page1 .m-gnb .m-nav .burger-menu .burger .burger-line {
+    background-color: #171717;
+  }
+  .fp-viewing-section-page1 .burger_back {
+    height: 100vh;
+    background-color: #fff;
+  }
+  header:hover .m-gnb .m-nav .burger-menu .burger .burger-line {
+    background-color: #fff;
+  }
+  header:hover .m-gnb .m-nav .burger-menu {
+    background-color: #171717;
+  }
   .sub-flex {
     display: flex;
     align-items: center;
