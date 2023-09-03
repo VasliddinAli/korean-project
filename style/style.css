@@ -1435,7 +1435,8 @@ header:hover .m-gnb .m-nav .burger-menu {
   padding-top: 50px;
 }
 .view_360 .img_360 img {
-  max-width: 300px;
+  max-width: 200px;
+  opacity: 0.2;
 }
 .view_360 .swiper {
   width: 60%;
@@ -1955,6 +1956,97 @@ header:hover .m-gnb .m-nav .burger-menu {
   font-weight: bold;
   color: #171717;
   text-align: center;
+}
+
+.specifications {
+  width: 90%;
+  margin: auto;
+  padding: 20px 0;
+}
+.specifications-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.specifications-top h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 35px;
+  font-weight: bold;
+  color: #5a5a5a;
+}
+.specifications-top .line {
+  margin-top: 10px;
+  width: 50px;
+  height: 3px;
+  border-radius: 4px;
+  background-color: #0b4ea2;
+  text-align: center;
+}
+.specifications-basic {
+  padding: 50px 0;
+}
+.specifications-basic-top {
+  background-image: url(../img/specification_bg.jpg);
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.specifications-basic-top-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+}
+.specifications-basic-top-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+}
+.specifications-basic-top h2 {
+  color: #fff;
+  font-size: 25px;
+}
+.specifications-basic-main {
+  display: flex;
+  flex-direction: column;
+}
+.specifications-basic-main .bg_blue {
+  border-top: 1px solid #45b5ff;
+  border-bottom: 1px solid #45b5ff;
+  background: #f5f5f5;
+}
+.specifications-basic-main-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+.specifications-basic-main-card div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.specifications-basic-main-card div:nth-child(1) {
+  width: 30%;
+}
+.specifications-basic-main-card div:nth-child(2) {
+  width: 70%;
+}
+.specifications-basic-main-card div h3 {
+  color: #171717;
+  font-size: 22px;
+  padding: 0;
+  margin: 0;
+}
+.specifications-basic-main-card div p {
+  color: #7a7a7a;
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
 }
 
 @media (max-width: 1560px) {
@@ -2492,6 +2584,90 @@ header:hover .m-gnb .m-nav .burger-menu {
     padding: 80px;
     border-radius: 20px;
   }
+  .specifications {
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+  }
+  .specifications-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .specifications-top h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+    color: #5a5a5a;
+  }
+  .specifications-top .line {
+    margin-top: 10px;
+    width: 50px;
+    height: 3px;
+    border-radius: 4px;
+    background-color: #0b4ea2;
+    text-align: center;
+  }
+  .specifications-basic {
+    padding: 50px 0;
+  }
+  .specifications-basic-top {
+    background-image: url(../img/specification_bg.jpg);
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .specifications-basic-top-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+  }
+  .specifications-basic-top h2 {
+    color: #fff;
+    font-size: 25px;
+  }
+  .specifications-basic-main {
+    display: flex;
+    flex-direction: column;
+  }
+  .specifications-basic-main .bg_blue {
+    border-top: 1px solid #45b5ff;
+    border-bottom: 1px solid #45b5ff;
+    background: #f5f5f5;
+  }
+  .specifications-basic-main-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+  }
+  .specifications-basic-main-card div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .specifications-basic-main-card div:nth-child(1) {
+    width: 30%;
+  }
+  .specifications-basic-main-card div:nth-child(2) {
+    width: 70%;
+  }
+  .specifications-basic-main-card div h3 {
+    color: #171717;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  .specifications-basic-main-card div p {
+    color: #7a7a7a;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+  }
 }
 @media (max-width: 700px) {
   #s_top {
@@ -2698,6 +2874,98 @@ header:hover .m-gnb .m-nav .burger-menu {
     display: inline-block;
     color: #c5c5c5;
     width: 100%;
+  }
+  .specifications {
+    width: 90%;
+    margin: auto;
+    padding: 0px 0;
+  }
+  .specifications-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .specifications-top h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: bold;
+    color: #5a5a5a;
+  }
+  .specifications-top .line {
+    margin-top: 10px;
+    width: 50px;
+    height: 3px;
+    border-radius: 4px;
+    background-color: #0b4ea2;
+    text-align: center;
+  }
+  .specifications-basic {
+    padding: 50px 0;
+  }
+  .specifications-basic-top {
+    background-image: url(../img/specification_bg.jpg);
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .specifications-basic-top-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .specifications-basic-top-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .specifications-basic-top h2 {
+    color: #fff;
+    font-size: 25px;
+  }
+  .specifications-basic-main {
+    display: flex;
+    flex-direction: column;
+  }
+  .specifications-basic-main .bg_blue {
+    border-top: 1px solid #45b5ff;
+    border-bottom: 1px solid #45b5ff;
+    background: #f0f3f6;
+  }
+  .specifications-basic-main-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px;
+  }
+  .specifications-basic-main-card div {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  .specifications-basic-main-card div:nth-child(1) {
+    width: 100%;
+  }
+  .specifications-basic-main-card div:nth-child(2) {
+    width: 100%;
+  }
+  .specifications-basic-main-card div h3 {
+    color: #171717;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  .specifications-basic-main-card div p {
+    color: #7a7a7a;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
   }
 }
 @media (max-width: 500px) {
