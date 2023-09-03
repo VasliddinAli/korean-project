@@ -21,6 +21,7 @@ $(function () {
     }, function () {
         $(this).removeClass("active").find(".lnb_two li").css({ display: "none" })
     })
+
     $(".m-gnb").click(function () {
         $("#sitemap").slideDown(400, 'linear').show();
     });
