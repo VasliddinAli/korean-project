@@ -1,3 +1,7 @@
+window.addEventListener('DOMContentLoaded', (event) => {
+    document.querySelector('.mainLoader').style.display = 'none'
+});
+
 $(function () {
 
     AOS.init({
