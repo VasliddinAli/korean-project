@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', (event) => {
+window.addEventListener('load', (event) => {
     document.querySelector('.mainLoader').style.display = 'none'
 });
 
